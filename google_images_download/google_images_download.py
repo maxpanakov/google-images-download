@@ -1088,7 +1088,7 @@ class googleimagesdownload:
                             print("Starting Download...")
                     items, errorCount, abs_path = self._get_all_items(images, main_directory, dir_name, limit,
                                                                       arguments)  # get all image items and download images
-                    paths[pky + search_keyword[i] + sky] = abs_path
+                    paths[pky + search_keyword[i] + sky] = items
 
                     # dumps into a json file
                     if arguments['extract_metadata']:
